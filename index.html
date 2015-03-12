@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-US" ng-app="tas">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Title</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <div class="container" ng-controller="TasController as tas">
+      <h1>My Address Book</h1>
+		<div ng-show="user">
+			<button class="btn btn-primary"><a href="/#/" style="color: white;font-family: 'Titillium Web', sans-serif;">Home</a></button>
+      <button class="btn btn-success"><a href="/#/new" style="color: white; font-family: 'Titillium Web', sans-serif;">New Contact</a></button>
+      <button class="btn btn-warning"><a href="/#/logout" style="color: white; font-family: 'Titillium Web', sans-serif;" >Logout {{user.password.email}}</a></button>
+		</div>
+		<div ng-view></div>
+		</div>
+    <br>
+<!--
+		<br>
+		<button class="btn btn-warning sortButton" ng-click="friendReverse=!friendReverse">Sort</button>
+		<br>
+-->
+		</div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="js/main.module.js"></script>
+    
+    <script src="js/main.config.js"></script>
+    <script src="js/main.constants.js"></script>
+    <script src="js/tas/tafactory.factory.js"></script>
+    <script src="js/tas/edit.controller.js"></script>    
+    <script src="js/tas/show.controller.js"></script>
+    <script src="js/tas/ta.controller.js"></script>
+    <script src="js/auth/auth.config.js"></script>
+    <script src="js/auth/auth.controller.js"></script>
+    <script src="js/auth/auth.factory.js"></script>
+    <script src="js/auth/logout.controller.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+
+  </body>
+</html>

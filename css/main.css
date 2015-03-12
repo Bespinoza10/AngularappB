@@ -1,0 +1,63 @@
+.elBotton{
+	margin-bottom: 20px;
+}
+
+.sortButton
+{
+	margin-top: 20px;
+}
+
+h1,h2,th,tr,label,td
+{
+		font-family: 'Titillium Web', sans-serif;
+}
+
+th
+{
+	color: #fff;
+}
+
+table
+{
+	box-shadow: 0px -1px 20px rgba(0, 0, 0, 0.2);
+}
+
+td
+{
+	background: #ffffff;
+	color:#000000;
+}
+.margen
+{
+	margin-top: 10px;
+}
+/*
+td:hover
+{
+	background: #ff9e00;
+}
+*/
+
+tr:hover {
+	background: #ff9e00;
+}
+
+table
+{
+	background: #ff9e00;	
+}
+
+th
+{
+	background: #ff9e00;
+}
+
+.inputColor
+{
+	border: solid 1px #ff9e00;
+}
+
+.font
+{
+	font-size: 15px;
+}

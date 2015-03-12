@@ -1,0 +1,23 @@
+{
+  "name": "AngularappB",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Bespinoza10/AngularappB",
+  "authors": [
+    "Brandon Espinoza <espinozab100@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "bootstrap": "~3.3.2",
+    "jquery": "~2.1.3",
+    "angular-route": "~1.3.14",
+    "firebase": "~2.2.2"
+  }
+}
